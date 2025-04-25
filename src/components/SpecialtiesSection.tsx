@@ -24,7 +24,7 @@ interface Specialty {
 const specialties: Specialty[] = [
   {
     id: "medicine",
-    name: "General Medicine",
+    name: "Medicine",
     icon: <Pill className="h-8 w-8" />,
   },
   {

@@ -185,7 +185,7 @@ export default function SpecialtiesSection() {
                 {specialty.icon}
               </div> 
               {/* <h3 className="font-semibold text-gray-900 dark:text-white text-center"> */}
-              <h3 className="font-semibold text-xl text-white text-center">
+              <h3 className="font-semibold text-white text-center">
                 {specialty.name}
               </h3>
             </motion.div>

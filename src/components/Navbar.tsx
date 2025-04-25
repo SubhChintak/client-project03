@@ -71,6 +71,10 @@ export default function Navbar() {
     setIsMenuOpen(false);
   };
 
+  const handleWhatsApp = () => {
+    window.open("https://wa.me/918415045165?text=Hello%2C%20I%27m%20interested%20in%20learning%20more%20about%20CureXpert%20India%20services."  );
+  };
+
   return (
     <header className="fixed top-0 left-0 right-0 z-50 bg-lime-950/90 dark:bg-lime-950/95 backdrop-blur-md border-b border-lime-800/50 dark:border-lime-800/50 shadow-md">
       <div className="container mx-auto px-4 sm:px-6 py-4">
@@ -273,7 +277,7 @@ export default function Navbar() {
               </div>
               
               <a
-                href="/#about"
+                href="/#"
                 className="text-lime-300 hover:text-lime-400 transition-colors"
                 onClick={toggleMenu}
               >
@@ -286,7 +290,7 @@ export default function Navbar() {
               >
                 Contact
               </a>
-              <Button className="bg-lime-500 hover:bg-lime-600 text-lime-950 font-semibold w-full">
+              <Button onClick={handleWhatsApp} className="bg-lime-500 hover:bg-lime-600 text-lime-950 font-semibold w-full">
                 Book Appointment
               </Button>
             </nav>

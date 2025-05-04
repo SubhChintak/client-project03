@@ -33,6 +33,7 @@ import Hospitals from "@/components/Hospitals";
 import { useIsMobile } from "@/hooks/use-mobile";
 import { Button } from "@/components/ui/button";
 import { motion } from "framer-motion";
+import AnimatedHero from "@/components/AnimatedHero";
 
 const Index = () => {
   const [showAllServices, setShowAllServices] = useState(false);
@@ -162,8 +163,14 @@ const Index = () => {
         <Marquee messages={marqueeMessages} />
         </div> */}
         
-        <section className="relative py-20 hero-gradient text-white">
-          <div className="absolute inset-0 bg-[url('https://i.pinimg.com/736x/fe/96/02/fe96022861709aaf6b5134bb0169dcbf.jpg')] bg-cover bg-center opacity-40"></div>
+        {/* <section className="relative py-20 hero-gradient text-white lg:h-screen w-screen">
+
+          <video autoPlay muted loop className="w-full h-full object-cover absolute inset-0 bg-cover bg-center opacity-160">
+  <source src="/lovable-uploads/hero-video.mp4" type="video/mp4" />
+  Your browser does not support the video!
+</video>
+
+
           <div className="container mx-auto px-4 py-10 sm:px-6 relative z-10">
             <div className="max-w-3xl">
               <motion.h1 
@@ -204,11 +211,13 @@ const Index = () => {
               </motion.div>
             </div>
           </div>
-        </section>
+        </section> */}
 
-        <div className="pt-0">
+        <AnimatedHero/>
+
+        {/* <div className="pt-0">
         <Marquee messages={marqueeMessages} />
-        </div>
+        </div> */}
         
         <SpecialtiesSection />
         
@@ -393,6 +402,10 @@ const Index = () => {
         <PartnersSection />
         
         <FAQSection />
+
+        <div className="pt-0">
+        <Marquee messages={marqueeMessages} />
+        </div>
         
         <Footer />
         

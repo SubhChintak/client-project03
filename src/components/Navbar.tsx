@@ -19,6 +19,7 @@ export default function Navbar() {
   const [isSpecialtiesOpen, setIsSpecialtiesOpen] = useState(false);
   const [isServicesOpen, setIsServicesOpen] = useState(false);
 
+
   const toggleMenu = () => {
     setIsMenuOpen(!isMenuOpen);
   };
@@ -92,7 +93,7 @@ export default function Navbar() {
               onClick={() => navigate('/')}
               style={{ cursor: 'pointer' }}
             >
-              CureXpert India
+              CureXpert
             </span>
           </div>
 

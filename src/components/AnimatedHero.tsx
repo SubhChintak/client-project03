@@ -19,7 +19,7 @@ const AnimatedHero = () => {
 </video>
       
       {/* Overlay gradient */}
-      <div className="absolute inset-0 bg-gradient-to-r from-black via-black/90 to-transparent"></div>
+      <div className="absolute inset-0 bg-gradient-to-r from-black via-black/75 to-transparent"></div>
       
      {/* Main content */}
      <div className="container mx-auto px-4 sm:px-6 relative z-10">
